@@ -1,0 +1,40 @@
+label {
+  color: var(--nav-color);
+  opacity: 0.8;
+}
+
+input[type='text'] {
+  width: 415px;
+  height: 40px;
+  border: 0.3px solid var(--secondary-color);
+  border-radius: 5px;
+  padding-left: 0.6rem;
+}
+
+input::placeholder {
+  color: var(--secondary-color);
+}
+
+input[type='number'] {
+  width: 355px;
+  height: 40px;
+  border: 0.3px solid var(--secondary-color);
+  border-radius: 5px;
+  padding-left: 0.6rem;
+}
+
+@media (max-width: 700px) {
+  label {
+    font-size: 0.8rem;
+  }
+  input[type='text'] {
+    width: 215px;
+    height: 20px;
+    margin-top: 0.7rem;
+  }
+  input[type='number'] {
+    width: 155px;
+    height: 20px;
+    margin-top: 0.7rem;
+  }
+}

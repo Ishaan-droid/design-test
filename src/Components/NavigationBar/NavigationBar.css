@@ -1,0 +1,79 @@
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.navbar-dark .navbar-brand::after {
+  content: ' ';
+  display: block;
+  height: 30px;
+  width: 1px;
+  background-color: var(--nav-color);
+  opacity: 0.3;
+  position: absolute;
+  left: 9.3rem;
+  bottom: 1.2rem;
+}
+
+.navbar-dark .navbar-toggler {
+  background-color: var(--primary-color);
+}
+
+.navbar {
+  padding: 0rem;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+}
+
+.navbar-nav a:hover {
+  color: var(--nav-color);
+}
+
+.navbar-nav a:first-child,
+.navbar-nav a:nth-child(2) {
+  height: 62px;
+}
+
+.navbar-normal {
+  color: var(--nav-color);
+  font-weight: 700;
+  text-decoration: none;
+  margin: auto 1rem;
+  padding: 1rem 0.5rem;
+}
+
+.router-active-link {
+  background-color: rgba(180, 175, 175, 0.37);
+  transition: 0.5s;
+}
+
+.nav-icons {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 990px) {
+  .navbar-dark .navbar-brand::after {
+    display: none;
+  }
+  .sticky-nav {
+    width: 63%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .sticky-nav {
+    width: 92%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .sticky-nav {
+    width: 95%;
+  }
+}

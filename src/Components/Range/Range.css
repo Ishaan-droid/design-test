@@ -1,0 +1,25 @@
+input[type='range'] {
+  width: 465px;
+  color: var(--primary-color);
+  appearance: auto;
+}
+
+input[type='range']::before {
+  content: 'Routine';
+  color: var(--nav-color);
+  position: relative;
+  top: 20px;
+}
+
+input[type='range']::after {
+  content: 'Unique';
+  position: relative;
+  top: 20px;
+  color: var(--nav-color);
+}
+
+@media (max-width: 700px) {
+  input[type='range'] {
+    width: 205px;
+  }
+}

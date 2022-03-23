@@ -1,0 +1,13 @@
+.jumbotron {
+  border: 0.1px solid rgb(148, 141, 141);
+  width: 46%;
+  height: 6%;
+  border-radius: 5px;
+}
+
+.jumbotron p {
+  text-align: justify;
+  margin-bottom: 0;
+  color: var(--nav-color);
+  padding: 1rem;
+}

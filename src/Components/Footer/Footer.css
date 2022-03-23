@@ -1,0 +1,10 @@
+.my-footer {
+  background-color: rgba(182, 173, 173, 0.61);
+  padding: 1rem;
+  width: 100%;
+}
+
+.my-footer p {
+  margin: 0rem;
+  padding-left: 2rem;
+}
